@@ -1,0 +1,3 @@
+  Examples:
+    $ cd dwre-project-root && dws connect sandbox1      Starts the sync using the "sandbox1" setup in .dwsyncrc
+    $ cd dwre-project-root && dws connect staging     Starts the sync using the "staging" setup in .dwsyncrc

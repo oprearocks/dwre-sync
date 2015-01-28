@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var fs        = require('fs'),
+    program = require('commander'),
+
+    constants = require('../lib/constants'),
+    examples = fs.readFileSync(__dirname + '/../examples/example.txt', 'UTF-8'),
+    pkg = require('../package.json'),
+    CLI = require('../lib/cli');
+
+program.version(pkg.version)
+    .option('-b, --bin', 'Add bin/ folder and executable file for module.')
+    .usage('[cmd] options');
+
+
+program.on('--help', function() {
+    process.stdout.write(examples);
+});
+
+program.command('connect [instance]')
+    .description('Connects to the [instance] instance.')
+    .action(function(instance) {
+        CLI.connect(instance);
+    });
+
+program
+    .parse(process.argv);
+
+if (process.argv.length == 2) {
+    program.outputHelp();
+    process.exit(constants.ERROR_EXIT);
+}
