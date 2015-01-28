@@ -1,0 +1,28 @@
+{
+  "name": "dwre-sync",
+  "version": "1.0.0",
+  "description": "A WebDav syncing cli tool for Demandware development, that uses config files rather than tool options.",
+  "main": "./bin/dws",
+  "bin": {
+    "packo": "./bin/packo"
+  },
+  "directories": {
+    "doc": "doc",
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "webdav",
+    "sync",
+    "demandware",
+    "ux-studio"
+  ],
+  "author": "Adrian Oprea",
+  "license": "MIT",
+  "dependencies": {
+    "webdav-sync": "^0.3.0"
+  }
+}
