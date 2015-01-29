@@ -11,7 +11,6 @@ var fs        = require('fs'),
     CLI = require('../lib/cli');
 
 program.version(pkg.version)
-    .option('-b, --bin', 'Add bin/ folder and executable file for module.')
     .usage('[cmd] options');
 
 
@@ -22,6 +21,12 @@ program.on('--help', function() {
 program.command('connect [instance]')
     .description('Connects to the [instance] instance.')
     .action(function(instance) {
+
+        if (!instance) {
+            process.stdout.write('No instance provided, exiting\n');
+            process.exit(constants.ERROR_EXIT);
+        }
+
         CLI.connect(instance);
     });
 
