@@ -26,5 +26,6 @@
     "colors": "^1.0.3",
     "commander": "^2.6.0",
     "webdav-sync": "^0.3.0"
-  }
+  },
+  "preferGlobal": true
 }
