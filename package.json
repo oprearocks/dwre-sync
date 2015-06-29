@@ -1,6 +1,6 @@
 {
   "name": "dwre-sync",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A WebDav syncing cli tool for Demandware development, that uses config files rather than tool options.",
   "main": "./bin/dwsync",
   "bin": {
