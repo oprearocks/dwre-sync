@@ -30,9 +30,9 @@
   "author": "Adrian Oprea",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.0.3",
-    "commander": "^2.6.0",
-    "webdav-sync": "^0.3.0"
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "webdav-sync": "^0.4.0"
   },
   "preferGlobal": true
 }
