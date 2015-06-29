@@ -20,6 +20,13 @@
     "demandware",
     "ux-studio"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opreaadrian/dwre-sync"
+  },
+  "bugs": {
+    "url": "https://github.com/opreaadrian/dwre-sync/issues"
+  },
   "author": "Adrian Oprea",
   "license": "MIT",
   "dependencies": {
